@@ -100,6 +100,10 @@ ENV BUNDLER_VERSION 1.14.6
 
 RUN gem install bundler --version "$BUNDLER_VERSION"
 
+ENV JEKYLL_VERSION 3.3.1
+
+RUN gem install jekyll --version "$JEKYLL_VERSION"
+
 # install things globally, for great justice
 # and don't create ".bundle" in all our apps
 ENV GEM_HOME /usr/local/bundle
